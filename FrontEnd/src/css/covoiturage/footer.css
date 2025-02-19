@@ -1,0 +1,126 @@
+/* Footer Styles */
+.page-footer {
+    background-color: #0F1E1B;
+    padding: 2rem 2rem;  /* Réduit de 3rem à 2rem */
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;  /* Réduit de 2rem à 1.5rem */
+    margin-bottom: 1.5rem;  /* Réduit de 2rem à 1.5rem */
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: #FFFFFF;
+    font-size: 1rem;  /* Réduit de 1.2rem à 1rem */
+    font-weight: 500;
+    margin-bottom: 0.5rem;  /* Réduit de 1rem à 0.5rem */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 0.9rem;  /* Réduit de 1rem à 0.9rem */
+    opacity: 0.8;
+    margin-bottom: 0.3rem;  /* Réduit de 0.5rem à 0.3rem */
+}
+
+/* Section Sociale */
+.social-section {
+    text-align: center;
+    position: relative;
+    padding-top: 1rem;  /* Réduit de 2rem à 1rem */
+    margin-top: 1rem;   /* Réduit de 2rem à 1rem */
+    grid-column: 1 / -1;
+}
+
+.social-section h4 {
+    color: #FFFFFF;
+    font-size: 1rem;  /* Réduit de 1.2rem à 1rem */
+    font-weight: 500;
+    margin-bottom: 1rem;  /* Réduit de 1.5rem à 1rem */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;  /* Réduit de 2rem à 1.5rem */
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 30px;     /* Réduit de 40px à 30px */
+    height: 30px;    /* Réduit de 40px à 30px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(89%) contrast(88%);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(150%) contrast(88%);
+    transform: scale(1.1);
+}
+
+.social-icon:hover {
+    box-shadow: 0 0 15px rgba(128, 205, 146, 0.8);
+    border-radius: 8px;
+}
+
+/* Logo Branding */
+.footer-branding {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;  /* Réduit de 2rem à 1rem */
+}
+
+.footer-branding img {
+    width: 80px;  /* Réduit de 100px à 80px */
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(89%) contrast(88%);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer-branding {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        text-align: center;
+        margin-top: 1rem;  /* Réduit de 2rem à 1rem */
+    }
+
+    .footer-branding img {
+        margin: 0 auto;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+}

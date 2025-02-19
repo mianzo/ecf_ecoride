@@ -3,140 +3,178 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Ecoride - Pour une route plus verte</title>
+   <title>EcoRide - La mobilité écologique</title>
    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap" rel="stylesheet">
    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet">
-   <link rel="stylesheet" href="FrontEnd/src/css/reset.css">
-   <link rel="stylesheet" href="FrontEnd/src/css/style.css">
+   <link rel="stylesheet" href="FrontEnd/src/css/main_page/reset.css">
+   <link rel="stylesheet" href="FrontEnd/src/css/main_page/style.css">
+   <link rel="stylesheet" href="FrontEnd/src/css/main_page/header.css">
+   <link rel="stylesheet" href="FrontEnd/src/css/main_page/main.css">
+   <link rel="stylesheet" href="FrontEnd/src/css/main_page/footer.css">
 </head>
 <body>
-    <header class="header">
-        <div class="nav-container">
-            <div class="logo-container">
-                <img src="Illustration_Graphique/logo/ecoride_logo-notext.png" alt="Ecoride" class="logo">
-                <span class="logo-text">Ecoride</span>
+    <header class="page-header">
+        <div class="nav-wrapper">
+            <div class="brand-identity">
+                <img src="Illustration_Graphique/logo/ecoride_logo-notext.png" alt="Logo EcoRide" class="brand-logo">
+                <span class="brand-name">Ecoride</span>
             </div>
-            <nav class="nav">
-                <a href="#" class="nav-link">
-                    <img src="FrontEnd/assets/pic/home.png" alt="">
-                    <span>Accueil</span>
+            <nav class="main-navigation">
+                <a href="index.html" class="nav-item">
+                    <img src="FrontEnd/assets/pic/home.png" alt="Accueil">
+                    <span class="nav-label">Accueil</span>
                 </a>
-                <div class="nav-divider"></div>
-                <a href="#" class="nav-link">
-                    <img src="FrontEnd/assets/pic/search.png" alt="">
-                    <span>Rechercher un trajet</span>
+                <div class="nav-separator"></div>
+                <a href="FrontEnd/src/html/covoiturage.html" class="nav-item">
+                    <img src="FrontEnd/assets/pic/search_white.png" alt="Rechercher">
+                    <span class="nav-label">Rechercher un trajet</span>
                 </a>
-                <div class="nav-divider"></div>
-                <a href="#" class="nav-link">
-                    <img src="FrontEnd/assets/pic/contact-mail.png" alt="">
-                    <span>Contact</span>
+                <div class="nav-separator"></div>
+                <a href="#" class="nav-item">
+                    <img src="FrontEnd/assets/pic/contact.png" alt="Contact">
+                    <span class="nav-label">Contact</span>
                 </a>
-                <div class="nav-divider"></div>
-                <a href="#" class="join-btn">
-                    <span>Rejoignez-nous</span>
-                    <img src="FrontEnd/assets/pic/profile-user.png" alt="">
+                <div class="nav-separator"></div>
+                <a href="FrontEnd/src/html/connexion.html" class="cta-button">
+                    <span class="cta-text">Rejoignez-nous</span>
+                    <img src="FrontEnd/assets/pic/user.png" alt="Rejoindre">
                 </a>
             </nav>
         </div>
     </header>
-    <main>
-        <section class="hero">
-            <h1 class="hero-title">ECORIDE</h1>
-            <div class="search-container">
-                <div class="search-group">
-                    <img src="FrontEnd/assets/pic/case.png" alt="" class="search-icon">
-                    <input type="text" placeholder="Depart" class="search-input">
+
+    <main class="page-content">
+        <section class="hero-section">
+            <h1 class="hero-headline">ECORIDE</h1>
+            <div class="journey-finder">
+                <div class="journey-input">
+                    <img src="FrontEnd/assets/pic/case.png" alt="Départ" class="input-icon">
+                    <input type="text" placeholder="Départ" class="input-field">
                 </div>
-                <div class="search-divider"></div>
-                <div class="search-group">
-                    <img src="FrontEnd/assets/pic/flag.png" alt="" class="search-icon">
-                    <input type="text" placeholder="Destination" class="search-input">
+                <div class="input-divider"></div>
+                <div class="journey-input">
+                    <img src="FrontEnd/assets/pic/flag.png" alt="Destination" class="input-icon">
+                    <input type="text" placeholder="Destination" class="input-field">
                 </div>
-                <div class="search-divider"></div>
-                <div class="search-group">
-                    <input type="date" class="search-input">
+                <div class="input-divider"></div>
+                <div class="journey-input">
+                    <input type="date" class="input-field">
                 </div>
-                <button class="search-btn">
-                    <img src="FrontEnd/assets/pic/glass.png" alt="Rechercher">
-                </button>
+                <a href="FrontEnd/src/html/covoiturage.html" class="search-trigger">
+                    <img src="FrontEnd/assets/pic/glass_green.png" alt="Rechercher">
+                </a>
             </div>
         </section>
-       <section class="main-content">
-           <h2 class="section-title">ECORIDE, ENSEMBLE POUR UNE ROUTE PLUS VERTE.</h2>
-           
-           <div class="eco-description">
-               <div class="eco-block eco-block-first">
-                   <div class="eco-logo">
-                       <img src="FrontEnd/assets/pic/feuille.png" alt="EcoRide Logo">
-                   </div>
-                   <div class="eco-text text-left">
-                       <p>Chez EcoRide, nous nous engageons pour une mobilité plus propre.</p>
-                       <p>Nous privilégions les véhicules électriques pour un impact carbone réduit, évitant ainsi les émissions de CO₂ et contribuant à un avenir plus durable.</p>
-                       <p>Ensemble, adoptons une conduite plus verte !</p>
-                   </div>
-               </div>
 
-               <div class="eco-block eco-block-second">
-                   <div class="eco-text text-right">
-                       <p>Chez EcoRide, roulez en harmonie avec la nature.</p>
-                       <p>Nos véhicules écologiques réduisent l'empreinte carbone tout en offrant un trajet confortable et responsable.</p>
-                       <p>Ensemble, avançons vers un avenir plus durable !</p>
-                   </div>
-                   <div class="eco-illustration">
+        <section class="mission-section">
+            <h2 class="section-headline">ECORIDE, ENSEMBLE POUR UNE ROUTE PLUS VERTE.</h2>
+            
+            <div class="mission-storytelling">
+                <div class="mission-chapter mission-first">
+                    <div class="mission-visual">
+                        <img src="FrontEnd/assets/pic/feuille.png" alt="Logo EcoRide">
+                    </div>
+                    <div class="mission-narrative text-left">
+                        <p>Chez ÉcoRide, nous nous engageons pour une mobilité plus propre. Nous privilégions les véhicules électriques pour un impact carbone réduit, évitant ainsi les émissions de CO₂ et contribuant à un avenir plus durable.</p>
+                        <p>Ensemble, adoptons une conduite plus verte !</p>
+                    </div>
+                </div>
+
+                <div class="mission-chapter mission-second">
+                   <div class="mission-visual">
                        <img src="FrontEnd/assets/pic/perso.png" alt="EcoRide Illustration">
                    </div>
+                   <div class="mission-narrative text-left">
+                       <p>Chez EcoRide, roulez en harmonie avec la nature. Nos véhicules écologiques réduisent l'empreinte carbone tout en offrant un trajet confortable et responsable.</p>
+                       <p>Ensemble, avançons vers un avenir plus durable !</p>
+                   </div>
                </div>
-           </div>
+            </div>
 
-           <div class="features-grid">
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <img src="FrontEnd/assets/pic/ecologique.png" alt="Ecologique">
-                   </div>
-                   <h3>ECOLOGIQUE</h3>
-                   <p>Diminuez votre impact environnemental</p>
-               </div>
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <img src="FrontEnd/assets/pic/economique.png" alt="Economique">
-                   </div>
-                   <h3>ECONOMIQUE</h3>
-                   <p>Réduisez vos frais de transport</p>
-               </div>
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <img src="FrontEnd/assets/pic/pratique.png" alt="Pratique">
-                   </div>
-                   <h3>PRATIQUE</h3>
-                   <p>Trouvez facilement des trajets adaptés à vos besoins</p>
-               </div>
-           </div>
-       </section>
-   </main>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="FrontEnd/assets/pic/ecologique.png" alt="Écologique">
+                    </div>
+                    <h3 class="advantage-title">ÉCOLOGIQUE</h3>
+                    <p class="advantage-description">Diminuez votre impact environnemental</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="FrontEnd/assets/pic/economique.png" alt="Économique">
+                    </div>
+                    <h3 class="advantage-title">ÉCONOMIQUE</h3>
+                    <p class="advantage-description">Réduisez vos frais de transport</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <img src="FrontEnd/assets/pic/pratique.png" alt="Pratique">
+                    </div>
+                    <h3 class="advantage-title">PRATIQUE</h3>
+                    <p class="advantage-description">Trouvez facilement des trajets adaptés à vos besoins</p>
+                </div>
+            </div>
+        </section>
 
-   <footer class="footer">
-       <div class="footer-grid">
-           <div>
-               <h3>ECORIDE</h3>
-               <p>ecf@ecoride.net</p>
-           </div>
-           <div>
-               <h3>SUPPORT</h3>
-               <p>Contactez-nous</p>
-           </div>
-           <div>
-               <h3>LEGAL</h3>
-               <p>Mentions legales</p>
-           </div>
-           <div>
-               <h3>SOCIAL</h3>
-               <div class="social-icons">
-                   <img src="FrontEnd/assets/pic/instagram.png" alt="Instagram">
-                   <img src="FrontEnd/assets/pic/facebook.png" alt="Facebook">
-                   <img src="FrontEnd/assets/pic/twitter.png" alt="Twitter">
-               </div>
-           </div>
-       </div>
-   </footer>
+        <section class="community-feedback">
+            <h2 class="section-headline">ILS ONT TESTÉ ECORIDE</h2>
+            <div class="user-stories">
+                <div class="story-card">
+                    <div class="story-content">
+                        <p>"Un service écologique et pratique qui change vraiment la façon de se déplacer !"</p>
+                        <div class="story-author">
+                            <img src="/FrontEnd/assets/img/louise.JPG" alt="Louise">
+                            <span class="author-name">Louise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-content">
+                        <p>"Des trajets responsables et économiques, je ne peux plus m'en passer."</p>
+                        <div class="story-author">
+                            <img src="FrontEnd/assets/img/covoiteur.jpg" alt="Alexandre">
+                            <span class="author-name">Alexandre</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-content">
+                        <p>"EcoRide, c'est la solution de mobilité du futur !"</p>
+                        <div class="story-author">
+                            <img src="FrontEnd/assets/img/avis3.jpg" alt="Margaux">
+                            <span class="author-name">Margaux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ECORIDE</h4>
+                <p>ecf@ecoride.net</p>
+            </div>
+            <div class="footer-section">
+                <h4>SUPPORT</h4>
+                <p>Contactez-nous</p>
+            </div>
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <p>Mentions légales</p>
+            </div>
+            <div class="social-section">
+                <h4>SOCIAL</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><img src="FrontEnd/assets/pic/instagram.png" alt="Instagram"></a>
+                    <a href="#" class="social-icon"><img src="FrontEnd/assets/pic/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="FrontEnd/assets/pic/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="Illustration_Graphique/logo/ecoride_logo-notext.png" alt="EcoRide Logo">
+        </div>
+    </footer>
 </body>
 </html>

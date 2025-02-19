@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Recherche de covoiturage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro" rel="stylesheet">
+    <link rel="stylesheet" href="../../src/css/covoiturage/reset.css">
+    <link rel="stylesheet" href="../../src/css/covoiturage/style.css">
+    <link rel="stylesheet" href="../../src/css/covoiturage/header.css">
+    <link rel="stylesheet" href="../../src/css/covoiturage/main.css">
+    <link rel="stylesheet" href="../../src/css/covoiturage/footer.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="nav-wrapper">
+            <div class="brand-identity">
+                <img src="../../../Illustration_Graphique/logo/ecoride_logo-notext.png" alt="Logo EcoRide" class="brand-logo">
+                <span class="brand-name">Ecoride</span>
+            </div>
+            <nav class="main-navigation">
+                <a href="../../../index.html" class="nav-item">
+                    <img src="../../assets/pic/home.png" alt="Accueil">
+                    <span class="nav-label">Accueil</span>
+                </a>
+                <div class="nav-separator"></div>
+                <a href="../../../index.html" class="nav-item">
+                    <img src="../../assets/pic/search_white.png" alt="Rechercher">
+                    <span class="nav-label">Rechercher un trajet</span>
+                </a>
+                <div class="nav-separator"></div>
+                <a href="#" class="nav-item">
+                    <img src="../../assets/pic/contact.png" alt="Contact">
+                    <span class="nav-label">Contact</span>
+                </a>
+                <div class="nav-separator"></div>
+                <a href="connexion.html" class="cta-button">
+                    <span class="cta-text">Rejoignez-nous</span>
+                    <img src="../../assets/pic/user.png" alt="Rejoindre">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="search-content">
+        <h1 class="results-title">RESULTATS:</h1>
+
+        <div class="search-results-container">
+            <aside class="filters-section">
+                <h2>TRIER PAR:</h2>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span>Type de véhicule</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span>Budget maximum</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span>Durée du trajet</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span>Fiabilité du conducteur</span>
+                    </label>
+                </div>
+            </aside>
+            <section class="results-section">
+                <div class="ride-card">
+                    <div class="driver-info">
+                        <img src="../../assets/img/james.png" alt="JAMES" class="driver-photo">
+                        <div class="driver-details">
+                            <h3>JAMES</h3>
+                            <div class="rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ride-details">
+                        <div class="time-info">Lun. 13h50 → Lun. 14h30</div>
+                        <div class="eco-badge">TRAJET ÉCOLO</div>
+                    </div>
+                    <div class="ride-action">
+                        <span class="price">À PARTIR DE 19,90 €</span>
+                        <a href="connexion.html" class="detail-button">DÉTAIL</a>
+                    </div>
+                </div>
+
+                <div class="ride-card">
+                    <div class="driver-info">
+                        <img src="../../assets/img/louise.JPG" alt="LOUISE" class="driver-photo">
+                        <div class="driver-details">
+                            <h3>LOUISE</h3>
+                            <div class="rating">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ride-details">
+                        <div class="time-info">Lun. 13h50 → Lun. 14h30</div>
+                        <div class="eco-badge">TRAJET ÉCOLO</div>
+                    </div>
+                    <div class="ride-action">
+                        <span class="price">À PARTIR DE 19,90 €</span>
+                        <a href="connexion.html" class="detail-button">DÉTAIL</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <button class="load-more">VOIR PLUS</button>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ECORIDE</h4>
+                <p>ecf@ecoride.net</p>
+            </div>
+            <div class="footer-section">
+                <h4>SUPPORT</h4>
+                <p>Contactez-nous</p>
+            </div>
+            <div class="footer-section">
+                <h4>LEGAL</h4>
+                <p>Mentions légales</p>
+            </div>
+            <div class="social-section">
+                <h4>SOCIAL</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <img src="../../assets/pic/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../../assets/pic/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="../../assets/pic/twitter.png" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-branding">
+            <img src="../../../Illustration_Graphique/logo/ecoride_logo-notext.png" alt="EcoRide Logo">
+        </div>
+    </footer>
+</body>
+</html>

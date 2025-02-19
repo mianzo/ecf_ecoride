@@ -1,0 +1,126 @@
+/* Footer Styles */
+.page-footer {
+    background-color: #0F1E1B;
+    padding: 3rem 2rem;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h4 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+/* Section Sociale */
+.social-section {
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    grid-column: 1 / -1;
+}
+
+.social-section h4 {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(89%) contrast(88%);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(150%) contrast(88%);
+    transform: scale(1.1);
+}
+
+.social-icon:hover {
+    box-shadow: 0 0 15px rgba(128, 205, 146, 0.8);
+    border-radius: 8px;
+}
+
+/* Logo Branding */
+.footer-branding {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
+.footer-branding img {
+    width: 100px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(82%) sepia(14%) saturate(1071%) hue-rotate(86deg) brightness(89%) contrast(88%);
+}
+
+/* Media Queries pour le Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-branding {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .footer-branding img {
+        margin: 0 auto;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+}

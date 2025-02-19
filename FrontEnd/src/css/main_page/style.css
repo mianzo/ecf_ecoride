@@ -1,0 +1,24 @@
+/* Variables globales */
+:root {
+    --earth-deep-green: #1C2F2B;
+    --nature-breath-green: #80CD92;
+    --pure-essence-white: #FFFFFF;
+    --storyteller-font: 'Neue Haas Grotesk Text Pro', sans-serif;
+}
+
+/* Reset et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--storyteller-font);
+    background-color: #1E3331;
+    color: var(--pure-essence-white);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
